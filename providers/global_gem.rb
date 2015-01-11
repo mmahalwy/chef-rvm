@@ -32,7 +32,7 @@ end
 
     # install gem in all rubies in global gemsets
     installed_rubies.each do |rubie|
-      gem_package_wrapper exec_action, "#{rubie}@global" if rubie.include?("ruby")
+      gem_package_wrapper exec_action, "#{rubie}@global"
     end
   end
 end
